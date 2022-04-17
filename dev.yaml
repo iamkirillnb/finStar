@@ -1,0 +1,11 @@
+db:
+  host: "localhost"
+  port: "5436"
+  user: "postgres"
+  password: "postgres"
+  database: "postgres"
+  ssl_mode: "disable"
+
+server:
+  host: "127.0.0.1"
+  port: "8080"

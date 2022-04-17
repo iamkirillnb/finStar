@@ -1,0 +1,54 @@
+// get all users
+GET http://127.0.0.1:8080/all
+content-type:application/json
+
+###
+// create user
+POST http://127.0.0.1:8080/create_user
+content-type:application/json
+
+{
+  "amount": 12345
+}
+
+###
+
+// create user
+POST http://127.0.0.1:8080/get_user
+content-type:application/json
+
+{
+  "id": "d54e66b5-9f26-4e12-986a-4533e928e825"
+}
+
+###
+
+POST http://127.0.0.1:8080/add_money
+content-type:application/json
+
+{
+  "id": "d54e66b5-9f26-4e12-986a-4533e928e825",
+  "amount": 5
+}
+
+###
+
+POST http://127.0.0.1:8080/send_money
+content-type:application/json
+
+
+[
+  {
+    "id": "d54e66b5-9f26-4e12-986a-4533e928e825",
+    "amount": 5
+  },
+  {
+    "id": "a47cf2dc-c172-46f9-b17f-61dc96199e4c"
+  }
+]
+
+
+###
+
+
+
